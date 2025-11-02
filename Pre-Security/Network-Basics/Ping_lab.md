@@ -14,11 +14,8 @@ In this lab, I used the `ping` command to test connectivity and latency between 
 - Interpreting timing statistics and packet loss to assess connectivity
 
 ## Screenshots
+<img width="777" height="202" alt="immagine" src="https://github.com/user-attachments/assets/d11a78fa-ce11-4cb1-b86f-f0582c1d926c" />
 
-![Ping to private network](./Screenshot-2025-11-02-025414.jpg)
-![Ping flag response](./Screenshot-2025-11-02-025422.jpg)
-![Detailed ping output](./Screenshot-2025-11-02-025351.jpg)
-![Ping theory summary](./Screenshot-2025-11-02-024712.jpg)
 
 ---
 
