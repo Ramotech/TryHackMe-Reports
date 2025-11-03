@@ -43,9 +43,3 @@ Practical Skills Developed in TryHackMe Labs
     Interpreting how dynamic and static entries appear and expire.
 
     Understanding ARP's role in troubleshooting local network communication issues.
-
-Summary Table
-Step	Description
-ARP Request	Broadcast to all: "Who has IP X.X.X.X?"
-ARP Reply	Unicast answer: "I have IP X.X.X.X, my MAC is xx-xx-xx-xx-xx-xx"
-ARP Cache	Temporary memory for learned IP/MAC links; speeds future communication
