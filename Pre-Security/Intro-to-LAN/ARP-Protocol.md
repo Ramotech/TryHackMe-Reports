@@ -6,9 +6,6 @@ What is ARP and Why Is It Important?
 ​
 
 Every networked device keeps an ARP cache/table, a temporary memory area that stores recent associations between IP addresses and MAC addresses.
-
-    ​
-
 How Does ARP Work?
 
     ARP Request: When a device wants to communicate within its network and knows the destination IP but not its MAC address, it broadcasts an ARP Request to all devices in the LAN. The message is like: "Who has IP address X.X.X.X? Tell me your MAC address."
