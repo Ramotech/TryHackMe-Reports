@@ -17,9 +17,6 @@ Improved network performance: Smaller networks mean less collision and broadcast
 ​
 
 Security and control: Segments are isolated, so traffic can be filtered or managed between departments (for example, separating employees and guest WiFi).
-
-    ​
-
 Subnet and Subnet Mask
 
     IP Address: Written in dotted decimal (e.g., 192.168.1.8), composed of four octets (each 8 bits, for a total of 32 bits in IPv4).
