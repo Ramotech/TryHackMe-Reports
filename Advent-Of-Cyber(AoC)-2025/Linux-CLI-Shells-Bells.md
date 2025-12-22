@@ -1,10 +1,4 @@
 # 🎄 Advent of Cyber 2025 - Day 1: Incident Response & Linux Forensics
-
-**Date:** December 21, 2025
-**Category:** Digital Forensics / Incident Response (DFIR)
-**Platform:** TryHackMe - Advent of Cyber 2025
-**Target System:** `tbfc-web01` (Linux Server)
-
 ## 1. Executive Summary
 This report details the investigation into a security incident affecting the *The Best Festival Company* (TBFC) infrastructure. Following the suspected abduction of the CISO (McSkidy), the `tbfc-web01` server began exhibiting anomalous behavior.
 The investigation successfully identified a malicious script responsible for data destruction and defacement. Furthermore, advanced forensic analysis of the file system and version control history allowed for the recovery of encrypted sensitive data, leading to the full restoration of the service.
