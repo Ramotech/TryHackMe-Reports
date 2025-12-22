@@ -1,4 +1,4 @@
-# 🎄 Advent of Cyber 2025 - Day 2: Incident Response & Linux Forensics
+# 🎄 Advent of Cyber 2025 - Day 1: Incident Response & Linux Forensics
 
 **Date:** December 21, 2025
 **Category:** Digital Forensics / Incident Response (DFIR)
