@@ -34,7 +34,6 @@ index=main sourcetype=web_traffic | timechart span=1d count | sort -count
 ```
 > **Observation:** The traffic volume increased by over 400% compared to the baseline, pinpointing the attack window.
 
-![Traffic Spike Visualization](img/splunk_timeline_spike.png)
 
 ### 2.3 Threat Hunting: Attacker Profiling
 I pivoted to analyzing the `user_agent` field to fingerprint the adversary. By filtering out legitimate browser traffic (Mozilla, Chrome, Safari), I exposed the use of offensive security tools.
@@ -52,7 +51,6 @@ index=main sourcetype=web_traffic user_agent!=*Mozilla* user_agent!=*Chrome* use
 
 By correlating these malicious User Agents with the `client_ip` field, I was able to isolate a single malicious IP address responsible for **100%** of the hostile traffic.
 
-![User Agent Analysis](img/splunk_user_agents.png)
 
 ---
 
@@ -72,7 +70,6 @@ GET /item.php?id=1 AND SLEEP(5)--
 ```
 **Analysis:** The injection of the `SLEEP(5)` command instructs the database to pause for 5 seconds. The server's response time confirmed the vulnerability, allowing the attacker to execute queries without needing visual feedback (blind injection).
 
-![SQL Injection Payload](img/splunk_sqli_sleep.png)
 
 ### Phase 3: Action on Objectives (RCE & Ransomware)
 Following the database compromise, the attacker escalated privileges to Remote Code Execution (RCE).
@@ -85,7 +82,6 @@ Following the database compromise, the attacker escalated privileges to Remote C
 GET /shell.php?cmd=./bunnylock.bin
 ```
 
-![Ransomware Execution](img/splunk_ransomware_exec.png)
 
 ### Phase 4: Command & Control (C2) Correlation
 To confirm the success of the data exfiltration and ongoing control, I pivoted to the `firewall_logs`. I searched for outbound connections originating from the compromised web server (`src_ip="10.10.1.5"`) destined for the Attacker's IP.
@@ -100,7 +96,6 @@ To confirm the success of the data exfiltration and ongoing control, I pivoted t
 sourcetype=firewall_logs src_ip="10.10.1.5" dest_ip="[Attacker_IP]" action="ALLOWED"
 ```
 
-![Firewall C2 Logs](img/splunk_firewall_c2.png)
 
 ---
 
@@ -128,4 +123,4 @@ Based on the forensic findings, the following mitigation strategies are recommen
 4.  **Network Segmentation & Egress Filtering:** Implement strict firewall rules to block outbound connections from web servers to non-standard ports (like 8080) and untrusted external IPs.
 
 ---
-*Report generated for Advent of Cyber 2024.*
+*Report generated for Advent of Cyber 2025.*
