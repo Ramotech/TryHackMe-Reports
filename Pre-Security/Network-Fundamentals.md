@@ -20,7 +20,6 @@ During this hands-on lab, I detected suspicious activity from a specific IP addr
 
 *This report is part of my ongoing study and documentation of cybersecurity labs on TryHackMe. The activity was carried out in a legal, simulated environment for educational purposes only.*
 # Technical Report: Extending Your Network (TryHackMe)
-**Date:** February 3, 2026
 **Category:** Network Security / Infrastructure
 **Tools:** Network Simulator, VPN Clients, Firewall (ACL) Managers
 **Author:** Cybersecurity Junior Pentester
